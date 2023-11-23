@@ -1,0 +1,130 @@
+.v213_3906 {
+    width: 526px;
+    height: 419px;
+    background: url("../images/v213_3906.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+.v213_3893 {
+    width: 240px;
+    height: 195px;
+    background: rgba(12,12,12,1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+}
+.v213_3894 {
+    width: 144px;
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 128px;
+    left: 53px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: left;
+}
+.v213_3895 {
+    width: 70px;
+    height: 72px;
+    background: url("../images/v213_3895.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 34px;
+    left: 85px;
+    overflow: hidden;
+}
+.v213_3899 {
+    width: 240px;
+    height: 195px;
+    background: rgba(255,255,255,1);
+    opacity: 1;
+    position: absolute;
+    top: 106px;
+    left: 286px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+}
+.v213_3900 {
+    width: 176px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 227px;
+    left: 329px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: center;
+}
+.v213_3896 {
+    width: 240px;
+    height: 195px;
+    background: rgba(8,8,8,1);
+    opacity: 1;
+    position: absolute;
+    top: 224px;
+    left: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+}
+.v213_3897 {
+    width: 150px;
+    color: rgba(252,255,255,1);
+    position: absolute;
+    top: 348px;
+    left: 42px;
+    font-family: Inter;/home/makorinaphtali/titans-work/shes-safe/public/assets/images
+    font-weight: Regular;
+    font-size: 15px;
+    opacity: 1;
+    text-align: center;
+}
+.v213_3902 {
+    width: 70px;
+    height: 70px;
+    background: url("../images/v213_3902.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 246px;
+    left: 85px;
+    overflow: hidden;
+}
+.v213_3903 {
+    width: 70px;
+    height: 70px;
+    background: url("../images/v213_3903.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 128px;
+    left: 371px;
+    overflow: hidden;
+}
