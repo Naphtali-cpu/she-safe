@@ -67,19 +67,37 @@ class MpesaController extends Controller
         $this->AddData();
         $this->RequestPayment();
         $data['response'] = $this->json;
-        return redirect()->back()->with('message', 'Trannsacrion Initiated Successfully');
+        return redirect()->back()->with('success', 'Transaction Initiated Successfully. Please enter your pin when prompted.');
+    }
+
+    public static function validatePhone($phone){
+        if (strpos($phone, '0') === 0 && strlen($phone) == 10) {
+            $nphone = '254' . substr($phone, 1);
+        } else {
+            // If the phone number doesn't match the expected format, set $nphone to false
+            $nphone = false;
+        }
+
+        return $nphone;
     }
 
     public function donation(Request $mrequest)
     {
-        $this->Amount = $mrequest->amount;
-        $this->AccountReference = 'Demo reference';
-        $this->TransactionDesc = "Purchase";
-        $this->PartyA = $mrequest->phone;
-        $this->AddData();
-        $this->RequestPayment();
-        $data['response'] = $this->json;
-        return redirect()->back()->with('message', 'Trannsacrion Initiated Successfully');
+        $validatedPhone = $this->validatePhone($mrequest->phone);
+//        dd($validatedPhone);
+        if ($validatedPhone) {
+            $this->Amount = $mrequest->amount;
+            $this->AccountReference = 'Shessafe';
+            $this->TransactionDesc = "Purchase";
+            $this->PartyA = $validatedPhone;
+            $this->AddData();
+            $this->RequestPayment();
+            $data['response'] = $this->json;
+            return redirect()->back()->with('success', 'Transaction Initiated Successfully. Please enter your pin when prompted.');
+        } else {
+            return redirect()->back()->with('error', 'Please check your phone number');
+        }
+
     }
     public function addcredentials(Request $request)
     {

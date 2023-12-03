@@ -19,21 +19,6 @@ class Controller extends BaseController
         }
     }
 
-    public static function validatePhone($phone){
-        if(strpos($phone, '0')===0 && strlen($phone)==10){
-            $nphone = "+254".substr($phone,1);
-        }elseif (strpos($phone, '+')===0 && strlen($phone)==13) {
-            $nphone = $phone;
-        }elseif (strpos($phone, '2')===0 && strlen($phone)==12) {
-            $nphone = "+".$phone;
-
-        } else {
-            $nphone = false;
-        }
-        return $nphone;
-    }
-
-
     public static function delete($folder,$file){
         File::delete(public_path("assets/images/".$folder.'/'.$file));
     }
